@@ -54,6 +54,12 @@ ROOT_URLCONF = 'blog.urls'
 
 WSGI_APPLICATION = 'blog.wsgi.application'
 
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'wonderer000@gmail.com'
+EMAIL_HOST_PASSWORD = 'gy7ujmnbvg'
+EMAIL_PORT = 587
+
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
