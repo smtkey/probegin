@@ -30,7 +30,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -38,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'interface',
+    'django.contrib.admin',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,6 +60,7 @@ EMAIL_HOST_USER = 'wonderer000@gmail.com'
 EMAIL_HOST_PASSWORD = 'gy7ujmnbvg'
 EMAIL_PORT = 587
 
+LOGIN_REDIRECT_URL = '/post'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases

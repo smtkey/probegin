@@ -32,6 +32,9 @@ class Post(Resource):
     def resource(self):
         return self._resource.posts
 
+    def post(self):
+        return self.process_result(self.resource.post())
+
 
 class BackendAPIClient(object):
 
