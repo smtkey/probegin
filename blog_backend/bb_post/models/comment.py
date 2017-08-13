@@ -8,5 +8,5 @@ class Comment(models.Model):
     content = models.TextField()
 
     class Meta(object):
-        app_label = 'bb_comment'
+        app_label = 'bb_post'
         db_table = 'comment'
