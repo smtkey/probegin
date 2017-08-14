@@ -1,11 +1,12 @@
 def serialize(post):
 
     serialized_post = serialize_id(post)
-    a = post.comment_set.all()
-    print(a)
+
+    comments = [serialize_comment(x)['content'] for x in post.comment_set.all()]
     serialized_post.update({
         'subject': post.subject,
         'content': post.content,
+        'comments': comments,
     })
 
     return serialized_post

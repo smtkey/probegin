@@ -7,6 +7,12 @@
     <h1>{{ post.subject }}</h1>
     <p>{{ post.content }}</p>
 
+    {% for comment in post.comments %}
+
+        <p>{{ comment|truncatewords:50 }}</p>
+
+    {% endfor %}
+
     <a href="{% url 'interface:post:list' %}">&larr; back to overview</a>
 
 {% endblock %}
